@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/id1"
+        android:title="Images" >
+    </item>
+
+
+    <item android:id="@+id/id4"
+        android:title="Take a Picture">
+
+    </item>
+
+
+
+
+
+
+</menu>

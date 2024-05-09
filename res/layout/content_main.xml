@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Displays a list of options on main activity-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3700B3"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="1141dp"
+        android:layout_height="578dp"
+        app:cardBackgroundColor="#28000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="655dp">
+
+            <Button
+                android:id="@+id/infoPageBtn"
+                android:layout_width="589dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/rounded_corner"
+                android:text="Information Page"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#3700B3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/guidelinesBtn"
+                android:layout_width="589dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner"
+                android:text="GUIDELINES"
+                android:textColor="#F3F0F0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#3700B3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/infoPageBtn" />
+
+            <Button
+                android:id="@+id/goToTableContentsBtn"
+                android:layout_width="589dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner"
+                android:text="Table of Contents"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#3700B3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guidelinesBtn" />
+
+            <Button
+                android:id="@+id/signOff"
+                android:layout_width="589dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner"
+                android:text="Sign-off and Lock"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#3700B3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goToTableContentsBtn" />
+
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="589dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner"
+                android:text="Share"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#3700B3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signOff" />
+
+            <Button
+                android:id="@+id/closeBtn"
+                android:layout_width="589dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_corner"
+                android:text="Close"
+                android:textColor="#F8F5F5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#3700B3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shareBtn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
